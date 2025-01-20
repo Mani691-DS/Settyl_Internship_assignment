@@ -1,5 +1,5 @@
 # Settyl_Internship_assignment
-This project has two files model.py, streamlit_app.py. Below is the explanation for ### model.py
+This project has two files model.py, streamlit_app.py. Below is the explanation for model.py
 
 ---
 
@@ -43,4 +43,18 @@ The code implements a **hybrid recommendation system** that combines collaborati
 
 ---
 
+### **Streamlit App Workflow(streamlit_app.py)**
+
+1. **Data Loading**: Reads `users.csv`, `products.csv`, `purchases.csv`, and `browsing_history.csv`.
+2. **User Input**:
+   - Accepts a `User ID` and a recommendation algorithm (`Collaborative Filtering`, `Content-Based Filtering`, or `Hybrid`).
+3. **Recommendation Generation**:
+   - Based on the selected algorithm:
+     - **Collaborative Filtering**: Recommends products based on similar users.
+     - **Content-Based Filtering**: Recommends products similar to the user's browsing history.
+     - **Hybrid**: Combines both and removes duplicates.
+4. **Exclude Interacted Products**: Removes already purchased or browsed products from recommendations.
+5. **Output**:
+   - Displays a list of products the user has interacted with.
+   - Shows recommended products with details (ID, name, price, rating, source).
 
