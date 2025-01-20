@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import pandas as pd
 from model import collaborative_filtering, content_based_filtering
